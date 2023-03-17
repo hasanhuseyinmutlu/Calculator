@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculator</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col">
+        <div id="display">0</div>
+        <div id="secondaryDisplay">0</div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <button id="divide" onclick="updateDisplay('divide')">/</button>
+        <button id="clear" onclick="clearDisplay()">c</button>
+        <button id="equals" onclick="updateDisplay('equals')">=</button>
+
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-4 ">
+
+        <button id="add" onclick="updateDisplay('add')">+</button>
+        <button id="one" onclick="updateDisplay(1)">1</button>
+        <button id="two" onclick="updateDisplay(2)">2</button>
+        <button id="three" onclick="updateDisplay(3)">3</button>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col">
+        <button id="subtract" onclick="updateDisplay('subtract')">-</button>
+        <button id="four" onclick="updateDisplay(4)">4</button>
+        <button id="five" onclick="updateDisplay(5)">5</button>
+        <button id="six" onclick="updateDisplay(6)">6</button>
+      </div>
+
+      <div class="row text-center">
+        <div class="col">
+          <button id="multiply" onclick="updateDisplay('multiply')">x</button>
+          <button id="seven" onclick="updateDisplay(7)">7</button>
+          <button id="eight" onclick="updateDisplay(8)">8</button>
+          <button id="nine" onclick="updateDisplay(9)">9</button>
+        </div>
+
+        <div class="row text-center">
+          <div class="col">
+            <button id="zero" onclick="updateDisplay(0)">0</button>
+            <button id="decimal" onclick="updateDisplay('decimal')">.</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+</html>
